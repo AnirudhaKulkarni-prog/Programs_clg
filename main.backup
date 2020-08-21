@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
+main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget
+{
+  var cmd;
+  web()
+  async {
+    var url="http://192.168.43.169/cgi-enabled/first.py";
+    var x=await http.get(url);
+    print(x.body);
+  }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home:Scaffold(
+        appBar:AppBar(title:Text("Docker Command Processor")) ,
+        body: Center(
+          child: Container(
+            width:300 ,
+            height: 300,
+            color:Colors.red ,
+            child:Column(
+              
+              children: <Widget>[
+                Card(
+                  
+                  child:TextField(
+                    onChanged: (value) => {
+                      cmd=value
+                    },
+                    decoration: InputDecoration(
+                      hintText:"Enter the OS Name",
+                      prefixIcon: Icon(Icons.style)
+                    ),
+                    
+
+                  )
+                ),
+                Card(
+                  child:TextField(
+
+                  )
+                ),
+                Card(
+                  child:FlatButton(onPressed:(){
+                        web();
+                        
+                  } , 
+                  child:Text("Press Me")),)
+              ],
+              
+            )  ,
+            
+
+
+          ),
+        ),)
+    );
+    
+  }
+  
+}
