@@ -1,0 +1,32 @@
+Dart:-
+1.Online Editor DartPad can be used to practice dart.
+2.Creation of variables to store data.Also mention the data type like int,String,float etc.
+3.String is depicted by a single/double quote.
+4."var" keyword is used to store variable of any datatype(dynamically).
+5.To know the data type of the variable at run type we use "variable.runtimeType"
+6.List datatype is like an array can store many values.
+7.To make the list store values of only one datatype use "List<int> x=[3,4,5]".Lists are mutable.
+8.We use index(0,1,2....) to access elements of list but in map data type each element can be given a variable name of our own instead of (0,1,2,3..).Map datatype contains key value pairs.
+9.Example of map:-var x={"id":1,"email":"v@lw.com","remarks":"good",}
+10.Accessing map elements:-x["id"]=1
+11.Maps are prefered over lists.
+
+Flutter:-
+1.Create app test3 through cmd and load it in VScode.
+2.Always save your .dart file in lib folder.
+3.Google developed a system called Material Design in 2014 to improve your UI.
+4.Flutter uses by default uses Material design.
+5.runApp() function consists of all th UI.
+6.MaterialApp() function is responsible for designing the home page.
+7.Use of MaterialApp():-
+    main()
+    {
+	runApp(MaterialApp(
+	     home:Center(
+		child:Text("Hi"),
+		),
+	      ));
+     }
+8.Text fuction is used to print content on the page.If the content needs to be in the Center then it should be present in the Center() function.
+9.From the Above example we can infer that dart uses map datatype extensively.
+

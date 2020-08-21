@@ -1,0 +1,8 @@
+Today we learn about gps and await/async.
+synchronous language dart
+run tasks in background if they take time and jump to next instruction set
+sleep() to delay a function,which is given duration through Duration() function.
+
+future datatype...Future.delayed() works similar to sleep,it has capabilty run the function passed to it in the function.
+await keyword is used to make a function wait for other function.
+To use await we need to make the parent function async.

@@ -1,0 +1,31 @@
+1.Today we discuss the body property of Scaffold,body as a key can be assigned only one function.
+  eg:-  body:Center(child: mybody)
+
+2.Container() function internally creates a boundary with properties width,height etc to define it's size.
+3.Using Colors function we can know how much space the Container covers by default(usually complete body).
+  eg:-  var mybody=Container(
+    width:100,
+    height:100,
+    child:Text(
+      "Hello",
+      style: TextStyle(color:Colors.deepPurple),),
+    decoration: BoxDecoration(
+      color:Colors.blue,
+    ),
+  );
+        
+4.A function inside another function should be given a key as child.
+5.A flutter app is made of many widgets, its kind of a datatype.Text(),Icon() all this fuctions return a widget. 
+6.Container has lots of advance properties like alignment and many other.
+7.decoration keyword is used to decorate behind the child.BoxDecoration() fuction is used as value of key decoration.
+8.decoration and color cannot be used at a same time in the same Container.
+9.A container can accomodate only one child.
+10.As we can use only one child in a container,we can use Layout widget as a child that takes many children and thus we can include many images etc
+11.Column() can be used as a only child for Container as column has children key that can hold a list of widgets(children).
+
+eg:-Column(
+  children: <Widget>[
+    Text('Deliver features faster'),
+    Text('Craft beautiful UIs'),
+   ],
+)

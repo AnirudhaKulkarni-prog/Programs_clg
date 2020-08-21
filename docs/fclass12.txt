@@ -1,0 +1,9 @@
+1.We learnt about Stateful and Stateless Widget.
+2.We need to change the width and height of Container dynamically,for that we use MediaQuery class.
+3.MediaQuery finds out the size of any mobile and helps us in setting height and width.
+4.If we want to make changes to something that is already created at run time Stateless Widget is of no use,
+Here StateFullWidget comes into picture.
+5.Any change(change of state) at runtime to be noticed by the widget(where change is visible) we use setState() function.
+6.setState() updates all the widgets that change at runtime.
+7.We also learnt about printing the output on the App which can be possible due setState() function.
+

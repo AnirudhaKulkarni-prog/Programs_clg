@@ -1,0 +1,8 @@
+We learnt about API,JSON and python.
+The server-side program built in either python,ruby,java etc provides a interface between client and server
+json format is a notation in which server sends the data to the client for getting the required data.
+Data in json is in curlybraces in which key,value pairs are used.
+We need to import json in the python server-side python program.
+On client-side,we use json parsing ,to extract data from json format we use jsonDecode().
+The extracted data is in the form map datatype.
+  

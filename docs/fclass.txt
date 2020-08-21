@@ -1,0 +1,23 @@
+RAM consumed by AVD is 3GB or 4GB we can check that through Task Manager.
+Setup:-
+Create a new App test2 using flutter create command.
+To run app on a physical device(Android).
+Compilation of Dart code an app package is created,copy it in the physical device and run.
+To copy or run the app the mobile should be changed to Developer mode and also use USB debugger.
+Type 7 times on Build Number present in About Phone option in Settings of your mobile phone.
+Allow USB debugging option present in Developer options.
+Now using Visual Studio we can run the App.
+
+Dart(made by Google):-
+1.Download Dart from dart.dev and install the zip file.
+2.Set the environment variable path for dart.
+3.Functions should be called to run the statements present in the function block.
+4.We can create multiple functions in any programming language.
+5.Some of the languages including Dart first look for main() function in your program.
+6.We can create multiple .dart files if code gets lengthy(for management) but the file with main() function is the main file.But the other files should be imported into the main file using "import" keyword.The other files are called module.
+7."//" to comment the line.
+8.Flutter is a platform so it has pre-created(inbuilt) modules which can be used by us.
+9.To run a App we need to use runApp() method in the module(material.dart) present in flutter package.We need to pass MaterialApp() as the argument with runApp().
+10.More explaination on this in the next session.
+   
+  

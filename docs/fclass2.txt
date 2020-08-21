@@ -1,0 +1,56 @@
+1.Our Aim today is to Build our First App with complete UI design.
+2.We can output our data(code) on the console,network,Mobile App etc.
+3.To output on console we use print(),if on network we use send() and if to be printed on the App then Text function is used 
+4.Text function has properties in the form of key and values,runApp() launches the App,MaterialApp() uses Material DEsign to beautify the App
+main()
+{
+  var x=Text("Hello",textDirection:TextDirection.ltr,textAlign:TextAlign.center,);
+
+  var design=MaterialApp(home:x,);
+
+
+  runApp(design);
+
+
+}
+5.Don't write everything in main function use different fuctions.
+main()
+{
+  runApp(myApp());
+}
+myApp()
+{
+  var x=Text("Hello",textDirection:TextDirection.ltr,textAlign:TextAlign.center,);
+  var design=MaterialApp(home:x,);
+  return design;
+}
+6.Also we can use different files to write the code and later import the files that are required.
+7.MaterialApp() uses home property which defines the complete UI of the Home page,also it includes other properties that help to remove the debug tag etc
+
+eg:- var design=MaterialApp(home:myhome,debugShowCheckedModeBanner:false ,);
+
+8.Scaffold is a class that gives us the pre-designed version of App page.Properties like AppBar,body, etc provide look and feel.
+eg:-  var myhome=Scaffold(appBar:myAppBar ,body:Center(child:x,),backgroundColor:Colors.white ,);
+9.Appbar class provides us with properties like title,leading and actions that can be fitted into our App bar.
+eg:- var myAppBar=AppBar(title:mytext,
+                  backgroundColor:Colors.blueAccent,
+                  leading:MyImage,
+                  actions: <Widget>[MyEmailButton,MyCalButton,
+                  ],);
+8.Icon class provides different types of Icons to the App,some perform actions(events) others are just images
+
+eg:-
+     var myicon1=Icon(Icons.email);
+9.IconButton class with the help of property like onpressed provides functionality to the button.
+eg:-
+    var MyEmailButton=IconButton(icon: myicon1, onPressed: press1);
+    press1()
+  {
+    print("Someone clicked on email....");
+  }
+
+10.actions property performs a list of Actions.
+
+11.Image class is used to display an image.To use an image from the web we can use network() method of Image class.It also contains other properties like width,height etc
+
+eg:-var MyImage=Image.network(url,width: double.infinity,height: double.infinity,);

@@ -1,0 +1,4 @@
+Docker
+sending values from client to the server through url.
+import cgi in python.use cgi.FieldStorage() to retrieve from the url in the server side.
+The variables in the url are set by the server side program

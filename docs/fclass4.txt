@@ -1,0 +1,5 @@
+1.Today we will learn how to enable Hot reload as we are now restarting the app to see changes.
+2.Due to Hot Reload, any changes in the code are reflected immediately in the app just after saving.
+3.To provide the capabilty of Hot reload to the code,we need to maintain/store the state of the code in an hirearcheal order.
+4.Build() function has the capabilty to store the state of code.Build() function is a part of Stateless Widget Class.BuildContext objects are passes to Build() functions this objects store/maintain the state of the hirerachy.
+5.To provide extra functionality to the App ,we can install Dart libraries using Pub.This libraries/modules are built by developers and are made available to other developers.                                              

@@ -1,0 +1,7 @@
+We learnt about using google map and gps in the Apps
+Theme of the app can be changed using theme property of MaterialApp() which uses Themedata class.
+If a App wants to use Google services it needs a key/token that can be achieved through Google Cloud Platform.
+GoogleMap() function is used to display map in the App.mapType property,initialCameraPosition
+Add the API key to AndroidManifest.xml.
+Use CameraPosition() function with target attribute that takes latitude and longitude of the desired location. 
+geolocator package can be used to make use of our mobile gps sensor to get current location.GeoLocator() function is used
